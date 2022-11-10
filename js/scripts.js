@@ -14,8 +14,8 @@ blueH3.style.color = "blue";
 container.appendChild(blueH3);
 
 const div = document.createElement("div");
-div.classList.add("borderDiv");
-div.classList.toggle('active');
+div.style.backgroundColor = "pink";
+div.style.border = "solid black";
 const h1 = document.createElement("h1");
 div.appendChild(h1);
 const appendedP = document.createElement("p");
