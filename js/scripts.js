@@ -23,3 +23,21 @@ div.appendChild(appendedP);
 h1.textContent = "I'm in a div";
 appendedP.textContent = "ME TOO!";
 container.appendChild(div);
+
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+    alert("Hello World");
+});
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+});
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    })
+
+});
